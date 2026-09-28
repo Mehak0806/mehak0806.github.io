@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehak — Product & Business Portfolio</title>
+<meta name="description" content="Mehak's product, business and technical portfolio.">
+<style>
+:root{
+  --bg:#0b0d10;--panel:#11151a;--panel2:#171c22;--text:#f4f5f7;--muted:#a7afb9;
+  --line:#28303a;--accent:#b8f36b;--max:1120px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,16,.88);backdrop-filter:blur(16px);z-index:10}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:22px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}
+.hero{min-height:78vh;display:grid;align-items:center;padding:85px 0 75px}
+.kicker{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-.065em;max-width:900px;margin:18px 0 28px}
+.hero p{font-size:20px;color:var(--muted);max-width:720px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:#0b0d10;border-color:var(--accent)}
+section{padding:90px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+h2{font-size:42px;line-height:1.05;letter-spacing:-.045em;margin:0}.section-head p{max-width:480px;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#414b58}
+.card .tag{font-size:12px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.card h3{font-size:25px;letter-spacing:-.03em;margin:10px 0}.card p{color:var(--muted)}
+.case{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.case b{color:var(--text)}.case span{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{padding:22px;background:var(--panel2);border:1px solid var(--line);border-radius:18px}.stat strong{display:block;font-size:30px}.stat span{color:var(--muted);font-size:13px}
+.timeline{display:grid;gap:14px}.row{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:25px 0;border-bottom:1px solid var(--line)}.date{color:var(--accent);font-size:13px;font-weight:700}.row h3{margin:0 0 5px;font-size:21px}.row p{margin:0;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.pill{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:9px 14px;color:#dce1e6;font-size:14px}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact p{color:var(--muted)}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:760px){.navlinks{display:none}.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:1fr;gap:5px}.contact{display:block}h2{font-size:34px}}
+
+.social-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.social-card{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:20px;transition:.2s}
+.social-card:hover{transform:translateY(-3px);border-color:#414b58}
+.social-left{display:flex;align-items:center;gap:16px}
+.social-icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--panel2);border:1px solid var(--line);font-weight:900;font-size:19px}
+.social-card h3{margin:0;font-size:20px}.social-card p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.social-arrow{color:var(--accent);font-size:20px}
+@media(max-width:760px){.social-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="wrap" style="width:100%;display:flex;align-items:center;justify-content:space-between">
+<a class="logo" href="#">mehak<span>.</span></a>
+<div class="navlinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#connect">Connect</a></div>
+</div></nav>
+
+<main>
+<section class="hero"><div class="wrap">
+<div class="kicker">Product · Business · Technology</div>
+<h1>I like turning messy problems into simple products.</h1>
+<p>I'm Mehak, a B.Tech Mechanical Engineering graduate from IIT Guwahati with hands-on experience across product case studies, data analysis, full-stack projects and program leadership.</p>
+<div class="buttons">
+<a class="btn primary" href="#work">Explore my work ↓</a>
+<a class="btn" href="#contact">Let's connect</a>
+</div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<div class="section-head"><h2>Selected work</h2><p>A mix of product thinking, business strategy, analytics and technology — built through self-projects, competitions and hands-on work.</p></div>
+<div class="grid">
+<article class="card"><div class="tag">Product case study</div><h3>Spotify — Product Teardown</h3><p>End-to-end teardown mapping user problems, product features, solutions and success metrics, followed by growth opportunities.</p><div class="case"><b>Focus:</b> <span>Product strategy · Growth · Metrics</span><br><b>Outcome:</b> <span>Strategies projected to lift revenue by 6%+</span></div></article>
+<article class="card"><div class="tag">Technical project</div><h3>AI Resume Screener</h3><p>Built a full-stack web app that evaluates resumes against job descriptions and surfaces skill gaps using the OpenAI GPT API.</p><div class="case"><b>Stack:</b> <span>React.js · Node.js · MongoDB · OpenAI GPT API</span></div></article>
+<article class="card"><div class="tag">Data analytics</div><h3>COVID Analysis</h3><p>Analysed global COVID-19 data in SQL Server to study vaccination effectiveness against case and death trends, then visualised findings in Tableau.</p><div class="case"><b>Focus:</b> <span>SQL · Data analysis · Dashboarding</span></div></article>
+<article class="card"><div class="tag">Business strategy</div><h3>Pandora — China Market Entry</h3><p>Created a 5-year revenue growth strategy centred on collaboration, diversification and sustainability for Pandora's China expansion.</p><div class="case"><b>Projected model:</b> <span>58% revenue growth · 12.38% CAGR · 75% ROI</span></div></article>
+</div>
+<div class="stats">
+<div class="stat"><strong>250+</strong><span>LeetCode problems</span></div>
+<div class="stat"><strong>3,000+</strong><span>UDGAM participants managed</span></div>
+<div class="stat"><strong>2,000+</strong><span>Students in peer-mentorship program</span></div>
+<div class="stat"><strong>15+</strong><span>Members led at MESA</span></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><h2>Experience & leadership</h2><p>Roles where I worked with people, systems and outcomes — not just deliverables.</p></div>
+<div class="timeline">
+<div class="row"><div class="date">JUL 2025 — MAY 2026</div><div><h3>PR & Alumni Head · MESA, IIT Guwahati</h3><p>Led a 15+ member team; built the MESA web library; organised Seismech and alumni initiatives including reunions, career fairs and networking events.</p></div></div>
+<div class="row"><div class="date">NOV 2023 — JAN 2024</div><div><h3>Junior Manager · UDGAM 2023</h3><p>Managed logistics for a large product case-study competition with 3,000+ participants and helped drive a 25% increase in participant engagement.</p></div></div>
+<div class="row"><div class="date">JUL 2023 — JUL 2024</div><div><h3>Events Head · Saathi Counselling Cell</h3><p>Designed onboarding programs for 1,200+ incoming students and coordinated a peer-mentorship program for 2,000+ students.</p></div></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><h2>Toolkit</h2><p>Tools I use to move from problem definition to analysis, prototyping and execution.</p></div>
+<div class="skills">
+<div class="pill">Product Strategy</div><div class="pill">Business Cases</div><div class="pill">SQL</div><div class="pill">Tableau</div><div class="pill">MS Excel</div><div class="pill">PowerPoint</div><div class="pill">Python</div><div class="pill">C/C++</div><div class="pill">React.js</div><div class="pill">Node.js</div><div class="pill">MongoDB</div><div class="pill">Git</div><div class="pill">MATLAB</div><div class="pill">AutoCAD</div><div class="pill">Solid Edge</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><h2>A few things I'm proud of</h2><p>Beyond projects and roles.</p></div>
+<div class="grid">
+<div class="card"><div class="tag">Academics</div><h3>IIT Guwahati</h3><p>B.Tech in Mechanical Engineering, 2022–2026.</p></div>
+<div class="card"><div class="tag">Competitive coding</div><h3>250+ DSA problems</h3><p>Solved 250+ LeetCode problems and reached the top 15% global ranking in 2023.</p></div>
+<div class="card"><div class="tag">Case competition</div><h3>4th place</h3><p>Secured 4th position in an inter-hostel case competition with a workforce strategy pitch.</p></div>
+<div class="card"><div class="tag">Community</div><h3>Volunteer teaching</h3><p>Taught mathematics to underprivileged children weekly in 2023.</p></div>
+</div>
+</div></section>
+
+
+<section id="connect"><div class="wrap">
+<div class="section-head"><h2>Find me online</h2><p>More about what I build, what I work on and my professional journey.</p></div>
+<div class="social-grid">
+<a class="social-card" href="https://www.linkedin.com/in/mehak-96474426b/" target="_blank" rel="noopener noreferrer">
+  <div class="social-left"><div class="social-icon">in</div><div><h3>LinkedIn</h3><p>Professional profile · Connect with me</p></div></div>
+  <div class="social-arrow">↗</div>
+</a>
+<a class="social-card" href="https://github.com/Mehak0806" target="_blank" rel="noopener noreferrer">
+  <div class="social-left"><div class="social-icon">⌘</div><div><h3>GitHub</h3><p>Projects · Code · Builds</p></div></div>
+  <div class="social-arrow">↗</div>
+</a>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<div><div class="kicker">Have a problem worth solving?</div><h2>Let's talk.</h2><p>I'm open to product, business and early-career opportunities.</p></div>
+<div class="buttons">
+<a class="btn primary" href="mailto:Star8mehak@gmail.com">Email me</a>
+<a class="btn" href="tel:+918766396414">Call</a>
+</div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Mehak · Product & Business Portfolio</div></footer>
+</body></html>
