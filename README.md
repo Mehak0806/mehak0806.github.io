@@ -3,7 +3,7 @@
 Personal portfolio website for Mehak.
 
 ## Live site
-Once GitHub Pages is enabled, the site will be available at:
+
 
 https://mehak0806.github.io/
 
